@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #F1F1F1;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.wrapper .description {
+    width: 100vh;
+    flex: 8;
+    background-color: black;
+    clip-path: polygon(0 0, 100% 0, 84% 100%, 0% 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.wrapper .selection{
+    width: 100vh;
+    flex: 4;
+}
+.text{
+    flex: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    justify-content: center;
+}
+.text h1{
+    background-color: black;
+    color: white;
+    font-size: 4em;
+    width: 500px;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.text h2{
+    font-size: 2em;
+    margin: 20px 120px;
+    background: white;
+}
+
+.images{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex: 8;
+    background: black;
+}
+
+.images .profile-card{
+    flex: 1;
+    display: flex;
+    margin: 160px 26px;
+    background: #353535;
+    height: 340px;
+}
+
+.skills{
+    background: #353535;
+    width: 80%;
+}
+
+.skills p{
+    width: 80%;
+    margin-left: 6%;
+    margin-top: 95px;
+    background: #353535;
+    color: #dcd1d1;
+}
+
+.images .profile-card .profile-card{
+    background: #353535;
+}
+.picture{
+    background: #353535; 
+}
+.picture .image{
+    height: 220px;
+    margin-top: 50px;
+    margin-left: 1%;
+    border-radius: 300px;
+}
+.images .profile-card .skillS{
+    flex: 4;
+}
+

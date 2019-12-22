@@ -1,0 +1,13 @@
+.selection{
+    display: flex;
+    flex-direction: column;
+}
+.swipe-image{
+    display: flex;
+    flex-direction: column;
+}
+
+.swipe-image img{
+    width: 300px;
+    margin: 40px 0;
+}
