@@ -1,13 +1,92 @@
 .selection{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
-.swipe-image{
+.swipe-container{
     display: flex;
+    flex-direction: column;
+    height: 80vh;
+    overflow: hidden;
+    width: 320px;
+    align-items: center;
+}
+
+.swipe-title{
+    /* margin: 40px 0; */
+    font-size: 1.5em; 
+    background: black;
+    width: 120%;
+    text-align: center;
+    height: 20%;
+    box-sizing: border-box;
+    padding: 60px;
+}
+
+.swipe-title h2 { 
+    color: white;
+}
+.swipe-container img{
+    width: 300px;
+    border-radius: 5px 5px 0 0;
+}
+.card-wrapper{
+    margin: 40px 0;
+}
+
+.social-media{
+    width: 300px;
+    height: 100px;
+    margin-top: -5px;
+    background-color: #212121;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    align-items: center;
     flex-direction: column;
 }
 
-.swipe-image img{
-    width: 300px;
-    margin: 40px 0;
+.social-media a, i{
+    color: #ebebeb;
+    background: #212121;
+}
+.social-media i {
+    margin: 0 15px;
+    width: 20px;
+    height: 20px;
+}
+.social-media .icons{
+    background: #212121;
+}
+
+.icons a{
+    text-decoration: none;    
+}
+
+.social-media h3{
+    background: none;
+    color: #dcd1d1;
+    letter-spacing: 1px;
+    margin: 15px 0;
+}
+
+/* CARD HOVER EFFECTS */
+
+@-webkit-keyframes shake {
+	0% { -webkit-transform: rotate(0deg); }
+	20% { -webkit-transform:  rotate(1deg); }
+	30% { -webkit-transform: rotate(0deg); }
+	40% { -webkit-transform:  rotate(1deg); }
+	60% { -webkit-transform:  rotate(0deg); }
+	70% { -webkit-transform: rotate(-1deg); }
+	80% { -webkit-transform:  rotate(1deg); }
+	100% { -webkit-transform: rotate(-1deg); }
+}
+
+.card-wrapper:hover {
+    transform: scale(1.03);
+    -webkit-animation-name: shake;
+	-webkit-animation-duration: 0.8s;
+	-webkit-transform-origin:50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
 }

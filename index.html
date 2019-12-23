@@ -2,6 +2,10 @@
 <head>
     <meta charset="utf-8">
     <title>Eloy's Page</title>
+    <!-- Google fonts - bitter -->
+    <link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
+    <!-- Font awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/description-styles.css">
     <link rel="stylesheet" href="styles/swipe-styles.css">
 </head>
@@ -9,16 +13,16 @@
     <div class="wrapper">
         <div class="description">
             <div class="text">
-                <h1>Nome do caboclo</h1>  
-                <h2>Nome de profissão inventada</h2>
+                <h1 id="dev-name">Nome</h1>  
+                <h2 id="dev-title">Nome de profissão inventada</h2>
             </div>
             <div class="images">
                 <div class="profile-card">
                     <div class="picture">
-                        <img class="image" src="./assets/images/veloy.jpeg">
+                        <img id="dev-pic" class="image" src="./assets/images/veloy.jpeg">
                     </div>
                     <div class="skills">
-                            <p>
+                            <p id="desccription">
                                     "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
                                     totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
                                     dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut 
@@ -34,10 +38,15 @@
             </div>
         </div>
         <div class="selection">
-            <div class="swipe-image">
-                <img src="assets/images/geloy.png">
-                <img src="assets/images/geloy.png">
+            <div class="swipe-title">
+                <h2>Our developers</h2>
+            </div>
+            <div class="swipe-container" id="swipe">
+                
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="scripts/devCard.js"></script>
+    <script type="text/javascript" src="scripts/swipeMechanic.js"></script>
+    <script type="text/javascript" src="scripts/selectDev.js"></script>
 </body>
