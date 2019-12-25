@@ -17,10 +17,48 @@
     font-size: 1.5em; 
     background: #3a3a3a;
     width: 120%;
-    text-align: center;
+
     height: 20%;
     box-sizing: border-box;
     padding: 60px;
+}
+@keyframes slideLeft {
+    from {
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+
+.red-line-horizontal{
+    background-color: #9a4343;
+    width: 450px;
+    height: 3px;
+    margin-left: 15%;
+    margin-top: -1.3%;
+    animation: slideLeft 1s;
+}
+.red-line-vertical{
+    background-color: #9a4343;
+    width: 3px;
+    height: 150px;
+    margin-left: 28.5%;
+    margin-top: -15%;
+    animation: slideDown 1s;
+}
+.developers-catalogue{
+    margin-left: 30%;
 }
 
 .swipe-title h2 { 

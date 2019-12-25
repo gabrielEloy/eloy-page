@@ -10,7 +10,6 @@ swipeContainer.addEventListener('mousedown', (e) => {
     swipeContainer.classList.add('active');
     startY = e.pageY; - swipeContainer.offsetTop;
     scrollTop = swipeContainer.scrollTop;
-    // console.log('startY', startY);
 })
 swipeContainer.addEventListener('mouseleave', () => {
     isDown = false;

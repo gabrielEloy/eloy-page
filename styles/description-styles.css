@@ -57,12 +57,14 @@
     flex: 8;
     background: #3a3a3a;
     position: relative;
+    animation: backgroundSwitch 2s;
 }
 
 .red-stripe{
     width: 80px;
     height: 100%;
     background-color: #9a4343;
+    animation: elongation 2s;
 }
 
 .left{
@@ -78,18 +80,29 @@
 }
 
 @keyframes  elongation {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
+    10% { width: 20%; background-color: #9a4343;}
+    20% { width: 40%; background-color: #9a4343;}
+    30% { width: 60%; background-color: #6A3A3A;}
+    40% { width: 80%; background-color: #4A3A3A;}
+    60% { width: 80px; background-color: #3a3a3a; }
+    70% { background-color: #3a3a3a; }
+    80% { background-color: #3a3a3a; }
+    90% { background-color: #6A4343; }
+    100% { background-color: #9a4343; }
 }
 
-.elongation {
-    animation: elongation 1s;
+@keyframes backgroundSwitch {
+    10% {background-color: #3a3a3a;}
+    20% {background-color: #4A3A3A;}
+    30% {background-color: #6A3A3A;}
+    40% {background-color: #6A4343;}
+    50% { background-color: #9A4343; }
+    60% { background-color: #9A4343; }
+    70% { background-color: #9a4343; }
+    80% { background-color: #6A4343; }
+    90% { background-color: #3a3a3a; }
+    100% { background-color: #3a3a3a; }
 }
-
 .images .profile-card{
     flex: 1;
     display: flex;
@@ -178,7 +191,7 @@
 }
 
 .picture .image{
-    height: 220px;
+    width: 80%;
     margin-left: 10%;
     border-radius: 300px;
 }
