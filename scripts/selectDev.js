@@ -6,7 +6,7 @@ let selectedDev;
 function updateData() {
     const devName = document.getElementById('dev-name');
     const devTitle = document.getElementById('dev-title');
-    const picture = document.getElementById('dev-pic');
+    const picture = document.getElementById(window.innerWidth > 1270 ? 'dev-pic' : 'dev-pic-mobile');
     const desc = document.getElementById('description');
 
     devName.innerText = selectedDev;
@@ -29,7 +29,7 @@ for(let dev of devs){
         if(!isDown){
             selectedDev = dev.outerText.trim();
             updateData();
-            retriggerAnimation('dev-pic', 'slide-animation');
+            retriggerAnimation(`dev-pic${window.innerWidth < 1270 ? '-mobile' : ''}`, 'slide-animation');
             retriggerAnimation('description', 'show-animation');
             retriggerAnimation('dev-name', 'drop-animation');
             retriggerAnimation('dev-title', 'slide-left-animation');

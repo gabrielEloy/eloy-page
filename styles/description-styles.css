@@ -176,10 +176,10 @@
 }
 
 .drop-animation{
-    animation: drop 1s;
+    animation: drop 2s;
 }
 .slide-left-animation{
-    animation: slideLeft 1s;
+    animation: slideLeft 2s;
 }
 
 .show-animation{
@@ -199,3 +199,101 @@
     flex: 4;
 }
 
+/* Lower resolution  monitors (1280 x 720) */
+
+
+@media only screen and (max-width: 1400px) {
+    .images .profile-card{
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        background: none;
+    }
+    .images .skills{
+        background: none;
+        width: 60%;
+        margin-left: 8%;
+        margin-top: -12%;
+    }
+    .picture{
+        background: none;
+    }
+    @keyframes slideDown {
+        from {
+            transform: translateY(-30%);
+        }
+        to { 
+            transform: translateY(0%);
+        }
+    }
+    
+    .slide-animation{
+        animation: slideDown 1.5s;
+    }
+  }
+  @media only screen and (min-width: 1270px){
+    .mobile-main{
+        display: none;
+    }
+  }
+  @media only screen and (max-width: 1270px) {
+        .text h1 {
+            width: 400px;
+        }
+        .text h2{
+            font-size: 1.3em;
+        }
+        .wrapper{
+            flex-direction: column;
+            overflow: auto;
+        }
+        .wrapper .description{
+            clip-path: none;
+            width: 100vw;
+        }
+        .text,{
+            display: none;
+        }
+
+        .mobile-main{
+            width: 70%;
+        }
+        .mobile-main h1, p{
+            color: #dcd1d1;
+            text-align: center;
+        }
+
+        .mobile-main h1{
+            margin-bottom: 10%;
+        }
+
+        .red-stripe{
+            width: 30px;
+        }
+        .centralizer{
+            display: flex;
+            justify-content: center;
+            margin-top: 40px
+        }
+        .image{
+            width: 20%;
+            border-radius: 300px;
+        }
+        
+        @keyframes emerge {
+            from {
+                transform: translateY(60%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        .slide-animation{
+            animation: emerge 1.5s;
+        }
+
+        .picture{
+            width: 20%;
+        }
+    }

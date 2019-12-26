@@ -47,7 +47,7 @@
     height: 3px;
     margin-left: 15%;
     margin-top: -1.3%;
-    animation: slideLeft 1s;
+    animation: slideLeft 2s;
 }
 .red-line-vertical{
     background-color: #9a4343;
@@ -55,7 +55,7 @@
     height: 150px;
     margin-left: 28.5%;
     margin-top: -15%;
-    animation: slideDown 1s;
+    animation: slideDown 2s;
 }
 .developers-catalogue{
     margin-left: 30%;
@@ -127,4 +127,43 @@
 	-webkit-transform-origin:50% 50%;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-timing-function: linear;
+}
+
+/* Lower resolution  monitors (1280 x 720) */
+
+@media only screen and (max-width: 1400px) {
+    .swipe-title{
+        height: 22%;
+    }
+    .red-line-vertical{
+        margin-top: -15%;
+        height: 120px;
+    }
+}
+
+@media only screen and (max-width: 1270px){
+    .swipe-title{
+        height: 20%;
+        width: 100vw;
+    }
+    .wrapper .selection{
+        width: 100vw;
+    }
+    .swipe-title{
+        border-top: 23px solid #9a4343;
+    }
+    .swipe-title h2{
+        color: white;
+        font-size: 3em;
+        text-align: center;
+        margin: 0;
+    }
+    .red-line-vertical{
+        margin-top: -13%;
+        height: 150px;
+        margin-left: 18.5%;
+    }
+    .red-line-horizontal{
+        width: 75%;
+    }
 }
