@@ -151,6 +151,7 @@
     }
     .swipe-title{
         border-top: 23px solid #9a4343;
+        border-bottom: 23px solid #9a4343;
     }
     .swipe-title h2{
         color: white;
@@ -165,5 +166,10 @@
     }
     .red-line-horizontal{
         width: 75%;
+    }
+    .swipe-container{
+        height: auto;
+        width: 100%;
+
     }
 }
