@@ -148,6 +148,7 @@
     }
     .wrapper .selection{
         width: 100vw;
+        background-color: #3a3a3a;
     }
     .swipe-title{
         border-top: 23px solid #9a4343;
@@ -170,6 +171,5 @@
     .swipe-container{
         height: auto;
         width: 100%;
-        background-color: #3a3a3a;
     }
 }
