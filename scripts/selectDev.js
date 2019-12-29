@@ -4,7 +4,7 @@ let selectedDev;
 const devsInfo = {
     'Gabriel Eloy': { 
         title: 'Software Engineer',
-        description: 'Javascript generalistic developer, specialized in the react family tools. Loves writing software and uses it as its art and way of comunicating to the world.',
+        description: 'Javascript generalistic developer, react and react native specialist. Loves writing software and uses it as its art and way of comunicating to the world.',
         img: 'assets/images/geloy.png',
         social: {
                 linkedin: 'https://www.linkedin.com/in/gabriel-eloy-746330143/',
@@ -36,7 +36,6 @@ function generateIcons() {
         `
         iconsHTML += currentIcon;
     }
-
     return iconsHTML;
 }
 
@@ -66,7 +65,7 @@ function retriggerAnimation(elementID, animationClass) {
 for(let dev of devs){
     dev.addEventListener('click', (e) => {
         if(!isDown){
-            selectedDev = dev.outerText.trim();
+            selectedDev = dev.innerText.replace("\n", '').trim();
             updateData();
             retriggerAnimation('dev-pic', 'slide-animation');
             retriggerAnimation('description', 'show-animation');
